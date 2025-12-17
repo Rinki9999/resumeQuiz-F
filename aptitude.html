@@ -1,0 +1,64 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Aptitude Daily - Gemini powered</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  
+
+  <div class="container">
+    <div id="streakBox"
+     style="font-size:20px; margin-bottom:15px; font-weight:bold;">
+🔥 Streak: 0 | 🏆 Best: 0
+</div>
+    <h1>Aptitude Daily</h1>
+
+    <div class="controls">
+      <label>Topics (choose multiple):</label>
+      <div id="topics">
+        <label><input type="checkbox" value="Percentages" checked> Percentages</label>
+        <label><input type="checkbox" value="Time & Work" checked> Time & Work</label>
+        <label><input type="checkbox" value="Profit & Loss" checked> Profit & Loss</label>
+        <label><input type="checkbox" value="Ratio & Proportion"> Ratio & Proportion</label>
+        <label><input type="checkbox" value="Number System"> Number System</label>
+        <label><input type="checkbox" value="Probability"> Probability</label>
+        <label><input type="checkbox" value="Number Series" checked> Number Series</label>
+        <label><input type="checkbox" value="LCM & HCF" checked> LCM & HCF</label>
+        <label><input type="checkbox" value="Simple Interest" checked> Simple Interest</label>
+        <label><input type="checkbox" value="Letter & Symbol Series"> Letter & Symbol Series</label>
+        <label><input type="checkbox" value="Algebra"> Algebra</label>
+        <label><input type="checkbox" value="Age Problems"> Age Problems</label>
+      </div>
+
+      <label>Difficulty:</label>
+      <select id="difficulty">
+        <option value="basic">Basic</option>
+        <option value="medium" selected>Medium</option>
+        <option value="advanced">Advanced</option>
+      </select>
+
+      <label>Questions per topic:</label>
+      <select id="perTopic">
+        <option value="2">2</option>
+        <option value="4" selected>4</option>
+        <option value="6">6</option>
+      </select>
+
+      <button id="generateBtn">Generate Quiz</button>
+    </div>
+
+    <div id="loader" style="display:none">Generating questions…</div>
+
+    <div id="quizArea" style="display:none">
+      <div id="questionsContainer"></div>
+      <button id="submitBtn">Submit Answers</button>
+      <div id="result"></div>
+    </div>
+  </div>
+
+<script type="module" src="apptitude.js"></script>
+</body>
+</html> 
